@@ -1,0 +1,46 @@
+@import 'https://fonts.googleapis.com/css?family=Comfortaa';
+body{
+  margin: 0;
+  padding: 0;
+  background-color:#FC7753;
+  font-family: 'Comfortaa', cursive;
+  width: 100%;
+  height: 100%;
+}
+h1 {
+  text-align: center;
+}
+.timeBlocks{
+  margin: 30px 0px 30px 300px;
+  font-size: 30px;
+  text-align: center;
+}
+#break{
+  float: left;
+  padding-right: 0px
+}
+#session{
+  float: right;
+  margin-right: 275px;
+}
+#clock{
+  margin: 150px 425px 0px;
+}
+.btn-circle {
+  border-radius: 100%;
+  padding: 60px 40px;
+  font-size: 50px;
+  border: none;
+  background: none;
+  border: 1px solid #000;
+}
+.btn-circle{
+  outline: none;
+}
+.operator{
+  background: none;
+  border: none;
+}
+.operator:focus {
+  outline: none;
+}

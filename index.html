@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>pomodoro clock</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="pomo.css">
+</head>
+<body>
+	<div ng-app="clock" ng-controller="MainCtrl">
+	  <div class="container">
+	    <h1>pomodoro clock</h1>
+
+	    <!-- Set Time blocks -->
+	    <div class="timeBlocks">
+	      <div id="break">
+	        <p>break time</p>
+	        <button class="operator" ng-click="breakTime(-1)">-</button>
+	        <span id="breakTime">{{breaktime}}</span>
+	        <button class="operator" ng-click="breakTime(1)">+</button>
+	      </div>
+	      <div id="session">
+	        <p>session time</p>
+	        <button class="operator" ng-click="sessionTime(-1)">-</button>
+	        <span id="sessionTime">{{sessiontime}}</span>
+	        <button class="operator" ng-click="sessionTime(1)">+</button>
+	      </div>
+	    </div> <!--End time blocks -->
+	    <div id="clock">
+	      <button class="btn-circle" ng-click="startTimer()">
+	        <span>{{sessionName}}</span>
+	        <p id="time">{{remainingTime}}</p>
+	      </button>
+	    </div>
+	  </div>
+	</div>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
+	<script src="pomo.js"></script>
+</body>
+</html>
